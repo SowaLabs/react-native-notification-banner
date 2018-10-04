@@ -74,7 +74,11 @@ RCT_EXPORT_METHOD(Show:(NSDictionary *)props onClick:(RCTResponseSenderBlock)onC
         _onHideCallback = nil;
     };
     
-    [banner show];
+    if (!duration || [duration integerValue] == 0) {
+        duration = [NSNumber numberWithInteger:3];
+        NSLog(@"%@", duration);
+    }
+    [banner showWithDuration:[duration doubleValue]];
 }
 
 

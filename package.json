@@ -2,6 +2,7 @@
   "name": "react-native-notification-banner",
   "version": "0.0.2",
   "description": "ReactNative: Native Notification Banner",
+  "homepage": "https://github.com/SowaLabs/react-native-notification-banner",
   "main": "js/RNNotificationBanner.js",
   "repository": {
     "type": "git",
