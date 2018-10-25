@@ -113,6 +113,7 @@ public class RNNotificationBannerModule extends ReactContextBaseJavaModule {
         public void onClick(View view) {
           if (onClickCallback != null) {
             onClickCallback.invoke();
+            Alerter.hide();
 
             onClickCallback = null;
             onHideCallback = null;
